@@ -1,0 +1,32 @@
+{% extends 'quotes/base.html' %}
+
+{% block title %}Server Error - Words of Christ{% endblock %}
+
+{% block content %}
+<div class="min-h-screen flex items-center justify-center px-4">
+    <div class="text-center">
+        <div class="w-24 h-24 bg-gradient-divine rounded-full flex items-center justify-center mx-auto mb-8">
+            <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+            </svg>
+        </div>
+        <h1 class="text-4xl font-bold text-sacred-900 mb-4">Server Error</h1>
+        <p class="text-lg text-sacred-600 mb-8 max-w-md mx-auto">
+            Something went wrong on our end. We're working to fix it. Please try again later.
+        </p>
+        <blockquote class="verse-highlight rounded-lg p-4 border-l-4 border-divine-400 mb-8 max-w-md mx-auto">
+            <p class="font-serif text-sacred-700 italic leading-relaxed">
+                "Come unto me, all ye that labour and are heavy laden, and I will give you rest."
+            </p>
+            <cite class="text-sm text-sacred-500 font-medium not-italic mt-2 block">Matthew 11:28</cite>
+        </blockquote>
+        <a href="{% url 'quotes:home' %}" 
+           class="inline-flex items-center space-x-2 bg-gradient-divine text-white px-6 py-3 rounded-xl hover:opacity-90 transition-opacity duration-200">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2v0a2 2 0 002-2h12a2 2 0 012 2v0"/>
+            </svg>
+            <span>Return to Words of Christ</span>
+        </a>
+    </div>
+</div>
+{% endblock %}
