@@ -4,7 +4,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin/08087422585/', admin.site.urls),
     path('', include('quotes.urls')),
 ]
 
