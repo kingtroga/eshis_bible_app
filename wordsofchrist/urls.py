@@ -12,3 +12,7 @@ urlpatterns = [
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+handler403 = "quotes.views.custom_permission_denied"
+handler404 = "quotes.views.custom_page_not_found"
+handler500 = "quotes.views.custom_server_error"
